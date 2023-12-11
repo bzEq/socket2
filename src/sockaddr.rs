@@ -295,7 +295,6 @@ impl fmt::Debug for SockAddr {
     fn fmt(&self, fmt: &mut fmt::Formatter<'_>) -> fmt::Result {
         let mut f = fmt.debug_struct("SockAddr");
         #[cfg(any(
-            target_os = "aix",
             target_os = "dragonfly",
             target_os = "freebsd",
             target_os = "haiku",
